@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849D8F;
+}
+ 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  background-image: linear-gradient(0deg, #E74A35, #F26843 );
+}
+
+/* button:hover {
+  background-image:;
+}
+
+button:focus,
+button:active {
+  background-image:;
+} */
+
+.search-popup input::placeholder,
+.enter-popup  input::placeholder {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+main input::placeholder,
+main textarea::placeholder {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.site-nav {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.user-nav {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.site-nav,
+.user-nav,
+.submenu {
+  list-style: none;
+}
+
+.nav-item:hover {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+.nav-item:active,
+.nav-item:focus {
+  color: #323232;
+  background-color: #F7F6F3;
+}
+
+.submenu {
+  /* display: none; */
+  background-color: #f8f7f4;
+  width: 200px;
+  padding: 0;
+}
+
+.submenu a {
+  color: #323232;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.submenu .priority-item {
+  line-height: 16px;
+  font-weight: 700;
+} 
+
+.site-nav .active {
+  color: #ffffff;
+  background-color: #D07058;
+}
+
+.submenu li:hover {
+  background-color: #FBDED7;
+}
+
+.submenu li:active,
+.submenu li:focus {
+  background-color: #F6B5A5;
+} 
+
+.contacts .schedule {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.contacts .phone {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.search:hover::before {
+  content: url("/img/loupe-dark.svg");
+  background-color: #f8f7f4;
+}
+
+.search::before {
+  content: url("/img/loupe.svg");
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.search-popup {
+  /* display: none; */
+  background-color: #f8f7f4;
+}
+
+.search-popup input {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #ffffff;
+}
+
+.enter:hover::before {
+  color: #323232;
+  background-image: url("/img/entrance.svg");
+  background-color: #f8f7f4;
+  background-repeat: no-repeat;
+  padding-right: 30px;
+  background-size: 15px;
+  background-position: right;
+}
+
+.enter::before {
+  content: "Вход";
+  color: #ffffff;
+  background-image: url("/img/entrance-white.svg");
+  background-color: rgba(255,255,255, 0.2);
+  background-repeat: no-repeat;
+  padding-right: 30px;
+  background-size: 15px;
+  background-position: right;
+}
+
+.enter-popup {
+  /* display: none; */
+  background-color: #F8F7F4;
+}
+
+.enter-popup a {
+  color: #323232;
+  font-size: 13px;
+}
+
+.enter-popup a:hover,
+.enter-popup a:focus,
+.enter-popup a:active {
+  color: #E84D37;
+}
+
+.cart {
+  color: #ffffff;
+  background-image: url("/img/basket.svg");
+  background-color: rgba(255,255,255, 0.2);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-size: 15px;
+  background-position: left;
+}
+
+.cart-with-item {
+  color: #323232;
+  background-image: url("/img/basket-red.svg");
+  background-color: #f8f7f4;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  background-size: 15px;
+  background-position: left;
+} 
+
+.cart-popup {
+  background-color: #F8F7F4;
+}
+
+.cart-contents td {
+  color: #323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.cart-contents span {
+  color: #999999;
+}
+
+.sum-total {
+  color: #323232;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.cart-popup a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  background-image: linear-gradient(0deg, #E74A35, #F26843 );
+}
+
+.features {
+  color: #323232;
+  list-style: none;
+  background-color: #F7F6F3;
+  background-image: url("/img/\ waffle-background.png");
+  background-repeat: no-repeat;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.features p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.blog {
+  color: #323232;
+  background-color: #ffffff;
+  background-image: url("/img/blog.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog a {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.subscribe {
+  color: #323232;
+  background-image: url("/img/subscribe-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.subscribe form {
+  background-color: #F8F7F4;
+}
+
+.subscribe input {
+  color: #999999;
+  font: inherit;
+  line-height: 24px;
+}
+
+.contacts-map {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.contacts-map h3,
+.contacts-map span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contacts-map p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.feedback {
+  /* display: none; */
+  background-color: #F8F7F4;
+}
+
+.feedback input,
+.feedback textarea {
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.feedback p {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.socials,
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.footer-nav li:first-child {
+  font-weight: 700;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus,
+.footer-nav a:active {
+  color: #FFBC9E;
+}
+
+.copyright p {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.copyright a:hover,
+.copyright a:active,
+.copyright a:focus {
+  color: #FFBC9E;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #FFBC9E;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-list h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  width: 267px;
+}
+
+.product-list p {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.product-list span {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.paggination  {
+  list-style: none;
+}
