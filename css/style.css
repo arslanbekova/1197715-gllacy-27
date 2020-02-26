@@ -35,9 +35,25 @@ button {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(0deg, #E74A35, #F26843 );
   border-radius: 25px;
   padding: 10px 14px;
+  border: none;
+}
+
+button:hover {
+  border: none;
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)), 
+  linear-gradient(to top, #e74a35, #f26843);
+}
+
+button:focus,
+button:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+  linear-gradient(to top, #e74a35, #f26843);
 }
 
 .h2 {
@@ -266,12 +282,33 @@ main textarea::placeholder {
   background-position: left;
   border-radius: 25px;
   padding: 10px 14px;
-  width: 103px;
-  height: 32px;
+  text-decoration: none;
 } 
 
 .cart-popup {
   background-color: #F8F7F4;
+}
+
+.cart-popup a {
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(0deg, #E74A35, #F26843 );
+  border-radius: 25px;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+.cart-popup a:hover {
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)), 
+  linear-gradient(to top, #e74a35, #f26843);
+}
+
+.cart-popup a:focus,
+.cart-popup a:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+  linear-gradient(to top, #e74a35, #f26843);
 }
 
 .cart-contents td {
@@ -299,8 +336,104 @@ main textarea::placeholder {
   background-image: linear-gradient(0deg, #E74A35, #F26843 );
 }
 
+.carousel li {
+  list-style: none;
+}
+
+.carousel p {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.carousel a {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #E74A35, #F26843);
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 41px;
+  padding-top: 17px;
+  padding-right: 43px;
+  padding-bottom: 16px;
+}
+
+.carousel a:hover {
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)), 
+  linear-gradient(to top, #e74a35, #f26843);
+}
+
+.carousel a:focus,
+.event a:focus,
+.carousel a:active,
+.event a:active {
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+  linear-gradient(to top, #e74a35, #f26843);
+}
+
+ .event h3 {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+ }
+
+ .event p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+ }
+
+ .event a {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  background-image: linear-gradient(0deg, #E74A35, #F26843 );
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 22px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+ }
+
+ .event a:hover {
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2)), 
+  linear-gradient(to top, #e74a35, #f26843);
+}
+
+ .raspberry {
+   background-image: url(/img/berry-background.jpg);
+   background-repeat: no-repeat;
+ }
+
+ .chocolate {
+   background-image: url(/img/chocolate-background.jpg);
+   background-repeat: no-repeat;
+ }
+
 .hits ul {
   list-style: none;
+}
+
+.hits p {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.hits span {
+  font-size: 30px;
 }
 
 .features {
