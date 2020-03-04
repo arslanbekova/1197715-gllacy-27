@@ -8,59 +8,74 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
-      <nav class="main-nav">
-        <ul class="site-nav">
-          <li>
-            <a class="nav-item" href="catalog.html">Каталог</a>
-            <ul class="submenu">
-              <li><a class="priority-item sub-item" href="#">Новинки</a></li>
-              <li><a class="sub-item" href="catalog.html">Сливочное</a></li>
-              <li><a class="sub-item active" href="#">Щербеты</a></li>
-              <li><a class="sub-item" href="#">Фруктовый лед</a></li>
-              <li><a class="sub-item" href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-item" href="#">Доставка и оплата</a></li>
-          <li><a class="nav-item" href="#">О компании</a></li>
-        </ul>
-        <ul class="user-nav">
-          <li class="search">
-            <form class="search-popup" action="#" method="POST">
-              <label for="search" class="visually-hidden">Поле поиска</label>
-              <input type="search" name="search" id="search" placeholder="Крем-брюле">
-            </form>
-          </li>
-          <li>
-            <a class="enter button" href="#" aria-label="Вход">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                  <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                </svg>
-              </span>Вход</a>
-            <!-- <div class="enter-popup">
-              <form action="#" method="POST">
-                <label for="login" class="visually-hidden">Ваш логин</label>
-                <input type="email" name="login" id="login" placeholder="email@example.com">
-                <label for="password" class="visually-hidden">Ваш пароль</label>
-                <input type="password" name="password" id="password" placeholder="********">
-                <button type="submit">Войти</button>
-              </form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </div> -->
-          </li>
-          <li>
-            <a class="cart button" href="#" aria-label="Корзина"><span>Пусто</span></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="contacts">
-        <p class="schedule">С 10 до 20, ежедневно</p>
-        <p class="phone">8 812 450-25-25</p>
-      </div>
+    <header class="main-header">
+      <div class="header-inner">
+        <div class="header-top">
+          <img class="header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+          <nav class="main-nav">
+            <div class="main-nav-container">
+              <div class="main-nav-inner">
+                <ul class="site-nav">
+                  <li>
+                    <a class="nav-item" href="catalog.html">Каталог</a>
+                    <ul class="submenu">
+                      <li><a class="priority-item sub-item" href="#">Новинки</a></li>
+                      <li><a class="sub-item" href="catalog.html">Сливочное</a></li>
+                      <li><a class="sub-item active" href="#">Щербеты</a></li>
+                      <li><a class="sub-item" href="#">Фруктовый лед</a></li>
+                      <li><a class="sub-item" href="#">Мелорин</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="nav-item" href="#">Доставка и оплата</a></li>
+                  <li><a class="nav-item" href="#">О компании</a></li>
+                </ul>
+                <ul class="user-nav">
+                  <li class="search">
+                    <form class="search-popup" action="#" method="POST">
+                      <label for="search" class="visually-hidden">Поле поиска</label>
+                      <input type="search" name="search" id="search" placeholder="Крем-брюле">
+                    </form>
+                  </li>
+                  <li>
+                    <a class="enter button" href="#" aria-label="Вход">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                        <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                        <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                      </svg>Вход
+                    </a>
+                    <!-- <div class="enter-popup">
+                      <form action="#" method="POST">
+                        <label for="login" class="visually-hidden">Ваш логин</label>
+                        <input type="email" name="login" id="login" placeholder="email@example.com">
+                        <label for="password" class="visually-hidden">Ваш пароль</label>
+                        <input type="password" name="password" id="password" placeholder="********">
+                        <button type="submit">Войти</button>
+                      </form>
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </div> -->
+                  </li>
+                  <li>
+                    <a class="cart button" href="#" aria-label="Корзина">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                        <g fill="#FFF">
+                          <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+                          <circle cx="6.984" cy="18" r="2"/>
+                          <circle cx="15.984" cy="18" r="2"/>
+                        </g>
+                      </svg>Пусто
+                    </a>
+                  </li>
+                </ul>
+              </div>  
+            </div>  
+          </nav>
+        </div>  
+        <div class="contacts">
+          <p class="schedule">С 10 до 20, ежедневно</p>
+          <p class="phone">8 812 450-25-25</p>
+        </div>
+      </div>  
     </header>
     <main>
       <h1 class="visually-hidden">Магазин мороженного Глейси</h1>
@@ -130,35 +145,40 @@
             </li> -->
       </section>
       <section class="features">
+        <div class="features-container">
         <h2 class="visually-hidden h2">Преимущества</h2>
         <p class="h2">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="feature-list">
-          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</li>
+          <li class="production">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="suppliers">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="ingredients">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</li>
         </ul>
+      </div>
       </section>
-      <div>
+    </div>
+    <div class="blog-subscribe-container">
         <article class="blog">
-          <h2 class="visually-hidden h2>Блог</h2>
+          <h2 class="visually-hidden h2">Блог</h2>
+          <div class="blog-container">
           <h3>Новое в нашем блоге</h3>
-          <a href="#">10 способов сервировки  фруктовых щербетов к  столу</a>
+          <a href="#">10 способов сервировки <br>фруктовых щербетов к<br>столу</a>
+          </div>
         </article>
         <section class="subscribe">
           <h2 class="visually-hidden h2">Форма подписки</h2>
           <form action="#" method="POST">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>всего самого вкусного, что у нас происходит. Обещаем не спамить<br>и не слать всякой ненужной ерунды. Честно =)</p>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <label for="subscribe" class="visually-hidden">E-mail</label>
             <input type="email" id="subscribe" name="subscribe" placeholder="email@example.com">
             <button type="submit">Отправить</button> 
           </form>
         </section>
-      </div>
+    </div>    
       <section class="map">
         <h2 class="visually-hidden h2">Контакты</h2>
         <img src="/img/map.png" width="1200" height="430" alt="Карта с указанием местоположения офиса">
-        <div class="contacts-map">
+        <!-- <div class="contacts-map">
           <h3>Адрес главного офиса<br> и офлайн-магазина:</h3>
           <p>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
           <h3>Для заказов по телефону:</h3>
@@ -174,10 +194,11 @@
           <label for="review" class="visually-hidden">Текст отзыва</label>
           <textarea id="review" name="review" rows="10" cols="50" placeholder="В свободной форме"></textarea>
           <button type="submit">Отправить</button>
-        </form>
+        </form> -->
       </section>
     </main>
     <footer>
+      <div class="footer-container">
       <ul class="socials">
         <li>
           <a href="#" class="icon button" aria-label="Twitter">
@@ -215,16 +236,21 @@
           </a>
         </li>
       </ul>
-      <ul class="footer-nav">
-        <li class="favourite"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
+      <table class="footer-nav">
+        <tr>
+          <td class="favourite"><a href="#">Для поставщиков</a></td>
+          <td><a href="#">Наши документы</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">О производстве</a></td>
+          <td><a href="#">Экологические стандарты</a></td>
+        </tr>
+      </table>
       <div class="copyright">
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="/img/logo-htmlacademy.svg" width="109" height="38" alt="Логотип изготовителя сайта"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy © 2019</a></p>
       </div>
+    </div>
     </footer>
   </body>
 </html>

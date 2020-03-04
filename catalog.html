@@ -8,9 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-        <a class="button" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
+    <header class="main-header">
+      <div class="header-inner">
+        <div class="header-top">
+        <a class="button header-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси"></a>
         <nav class="main-nav">
+          <div class="main-nav-container">
+            <div class="main-nav-inner">
           <ul class="site-nav">
             <li class="active nav-item">Каталог
               <ul class="submenu">
@@ -33,14 +37,12 @@
             </li>
             <li>
               <a class="enter button" href="#" aria-label="Вход">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                    <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                  </svg>
-                </span>Вход</a>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                  <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                </svg>Вход
               </a>
-            <div class="enter-popup">
+            <!-- <div class="enter-popup">
               <form action="#" method="POST">
                 <label for="login" class="visually-hidden">Ваш логин</label>
                 <input type="email" name="login" id="login" placeholder="e-mail@example.com">
@@ -50,10 +52,17 @@
               </form>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
-            </div>
+            </div> -->
             </li>
             <li>
-              <a class="cart-with-item button" href="#" aria-label="Корзина">2 товара</a>
+              <a class="cart-with-item button" href="#" aria-label="Корзина">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                  <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+                  <circle fill="#343434" cx="6.984" cy="18" r="2"/>
+                  <circle fill="#343434" cx="15.984" cy="18" r="2"/>
+                  <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+                </svg>2 товара
+              </a>
               <!-- <div class="cart-popup">
                 <table class="cart-contents">
                   <tr>
@@ -76,16 +85,22 @@
               </div> -->
             </li>
           </ul>
+        </div>  
+      </div>  
         </nav>
+        </div>
         <div class="contacts">
           <p class="schedule">С 10 до 20, ежедневно</p>
           <p class="phone">8 812 450-25-25</p>
         </div>
+      </div>
     </header>
     <main>
+      <div class="bread-crumbs">
         <a class="first-item" href="index.html">Главная</a>
         <a class="second-item" href="catalog.html">Каталог</a>
         <p class="page-name">Сливочное</p>
+      </div>
         <h1>Сливочное мороженное</h1>
         <section>
             <h2 class="visually-hidden h2">Фильтр товаров</h2>
@@ -154,14 +169,17 @@
               </div>
             </form>
         </section>
-        <section>
+        <section class="catalog">
+          <div class="product-list-container">
             <h2 class="visually-hidden h2">Карточки товаров</h2>
             <ul class="product-list">
-                <li>
+              <li>
+                <div class="product-item-container">
                   <p>310₽<span>/кг</span></p>
                   <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                </li>
+                </div>
+                <a>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              </li>
                 <li>
                   <p>380₽<span>/кг</span></p>
                   <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -218,6 +236,7 @@
                   <a>Сливочное с мятным сиропом</a>
                 </li>
             </ul>
+          </div>  
         </section>
         <ul class="paggination">
           <li><span></span></li>
@@ -238,6 +257,7 @@
 
     </main>
     <footer>
+      <div class="footer-container">
       <ul class="socials">
         <li>
           <a href="#" class="icon button" aria-label="Twitter">
@@ -275,16 +295,21 @@
           </a>
         </li>
       </ul>
-        <ul class="footer-nav">
-          <li class="favourite"><a href="#">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
-        <div class="copyright">
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="/img/logo-htmlacademy.svg" width="109" height="38" alt="Логотип изготовителя сайта"></a>
-          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy © 2019</a></p>
-        </div>
+      <table class="footer-nav">
+        <tr>
+          <td class="favourite"><a href="#">Для поставщиков</a></td>
+          <td><a href="#">Наши документы</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">О производстве</a></td>
+          <td><a href="#">Экологические стандарты</a></td>
+        </tr>
+      </table>
+      <div class="copyright">
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="/img/logo-htmlacademy.svg" width="109" height="38" alt="Логотип изготовителя сайта"></a>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy © 2019</a></p>
+      </div>
+    </div>
     </footer>
   </body>
 </html>
