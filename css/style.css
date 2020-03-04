@@ -873,6 +873,8 @@ svg g:focus {
   display: flex;
   justify-content: flex-start;
   height: 21px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .bread-crumbs p {
@@ -912,17 +914,14 @@ svg g:focus {
 }
 
 .product-list p {
-  margin: 0px;
+ margin-top: -50px;
+
 }
 
 .product-list a {
   text-align: center;
 }
 
-.product-item-container {
-  height: 267px;
-  padding-bottom: 20px;
-}
 
 /* product-list */
 
