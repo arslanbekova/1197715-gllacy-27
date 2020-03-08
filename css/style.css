@@ -317,7 +317,7 @@ main textarea::placeholder {
 
 .search:hover {
   background-color: #f8f7f4;
-  background-image: url(../img/loupe-dark.svg");
+  background-image: url("../img/loupe-dark.svg");
 }
 
 .search-popup {
@@ -533,7 +533,7 @@ main textarea::placeholder {
 }
 
 .site-wrapper::before {
-  background-image: url(../img/slider2.png");
+  background-image: url("../img/slider2.png");
   background-position-y: 83px;
 }
 
@@ -726,6 +726,11 @@ main textarea::placeholder {
   list-style: none;
   margin: 0px;
 }
+
+/* .hits-list li::before {
+  content: url("../img/hit.svg");
+  position: absolute;
+} */
 
 .hits-list h3 {
   font-size: 16px;
