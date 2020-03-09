@@ -205,6 +205,7 @@ main textarea::placeholder {
 /* Site-navigation, button-link */
 .site-nav .nav-item {
   padding: 10px 14px;
+  position: relative;
 }
 
 .site-nav .nav-item:hover {
@@ -247,28 +248,85 @@ main textarea::placeholder {
 /* Site-navigation, button-link */
 
 /* Submenu styles */
-.submenu {
+.submenu-wrapper {
   display: none;
-  background-color: #f8f7f4;
-  width: 200px;
-  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: -6px;
+  z-index: 10;
+  padding-top: 20px;
+  width: 90px;
+
+  background-color: transparent;
 }
 
-.nav-item:hover .submenu {
-  display: block;
+.submenu {
+  display: none;
+
+  background-color: #f8f7f4;
+  border-radius: 15px
+  ;
+  position: absolute;
+  top: 100%;
+  padding: 5px 0px;
+}
+
+.submenu li {
+  margin: 0px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  padding-top: 7px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .submenu a {
   color: #323232;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 16px;
   font-weight: 400;
 }
 
-.submenu .priority-item {
-  line-height: 16px;
+.submenu .news {
   font-weight: 700;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.submenu .active {
+  border-radius: 0px;
+  padding: 7px 0px 8px 20px;
+}
+
+  .sub-item span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+
+  display: inline-block;
+  width: 115px;
+  padding-left: 14px;
+  margin-left: 6px;
+}
+
+.site-nav > li:hover .submenu-wrapper {
+  display: block;
+}
+
+.nav-item:hover .submenu {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 143px;
+  padding: 0px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border-radius: 5px;
+}
+
+.submenu li:first-child {
+  padding: 10px 0px 0px 0px;
 }
 
 .submenu li:hover {
@@ -279,7 +337,6 @@ main textarea::placeholder {
 .submenu li:focus {
   background-color: #F6B5A5;
 }
-
 /* Submenu styles */
 
 /* Header's contacts */
