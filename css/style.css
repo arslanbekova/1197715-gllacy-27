@@ -443,7 +443,6 @@ main textarea::placeholder {
 .enter-popup a:active {
   color: #E84D37;
 }
-
 /* Enter button with popup */
 
 /* Cart button with popup */
@@ -530,7 +529,6 @@ main textarea::placeholder {
   line-height: 24px;
   background-image: linear-gradient(0deg, #E74A35, #F26843);
 }
-
 /* Cart button with popup */
 /* Header */
 
@@ -784,10 +782,10 @@ main textarea::placeholder {
   margin: 0px;
 }
 
-/* .hits-list li::before {
+.hits-list li::before {
   content: url("../img/hit.svg");
   position: absolute;
-} */
+}
 
 .hits-list h3 {
   font-size: 16px;
