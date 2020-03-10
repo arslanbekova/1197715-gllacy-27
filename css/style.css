@@ -184,6 +184,10 @@ main textarea::placeholder {
   justify-content: space-between;
 }
 
+.user-nav li {
+  position: relative;
+}
+
 .user-nav li:not(:last-child) {
   margin-right: 10px;
 }
@@ -309,6 +313,7 @@ main textarea::placeholder {
 
 .site-nav > li:hover .submenu-wrapper {
   display: block;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .nav-item:hover .submenu {
@@ -323,6 +328,7 @@ main textarea::placeholder {
   padding-bottom: 5px;
 
   border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .submenu li:first-child {
@@ -398,6 +404,7 @@ main textarea::placeholder {
   position: absolute;
   z-index: 10;
   background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 } 
 
 .search-popup {
@@ -433,9 +440,7 @@ main textarea::placeholder {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
   display: inline-block;
-}
 
-.enter {
   display: flex;
   align-items: center;
   height: 33px;
@@ -460,15 +465,65 @@ main textarea::placeholder {
   fill: #ffffff;
 }
 
+.enter-popup-wrapper {
+  display: none;
+  padding-top: 5px;
+  width: 120px;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 0;
+  background-color: transparent;
+}
+
 .enter-popup {
   display: none;
   background-color: #F8F7F4;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  padding: 20px 17px 22px 19px;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.enter-wrapper:hover .enter-popup-wrapper {
+  display: block;
+  z-index: 10;
+}
+
+.enter-wrapper:hover .enter-popup{
+  display: block;
+  z-index: 10;
+}
+
+.enter-popup input {
+  width: 221px;
+  display: block;
+  padding: 12px 10px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
 }
 
 .enter-popup a {
-  display: none;
+  display: inline-block;
   color: #323232;
   font-size: 13px;
+  border-bottom: 1px solid #323232;
+  margin-bottom: 4px;
+}
+
+.enter-popup button {
+  display: inline-block;
+  float: left;
+  border-radius: 20px;
+  padding: 10px 25px;
+  margin-right: 20px;
 }
 
 .enter-popup a:hover,
