@@ -419,9 +419,9 @@ main textarea::placeholder {
 }
 
 .search-popup input {
-  color: #999999;
-  font-size: 14px;
-  font-weight: 400;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
 
   background-color: #ffffff;
@@ -429,8 +429,22 @@ main textarea::placeholder {
   border: solid 1px #d3d3d2;
 
   padding: 7px 15px 10px 15px;
+  height: 44px;
   width: 311px;
+  box-sizing: border-box;
+
+  outline: none;
 }
+
+.search-popup input:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.search-popup input:focus,
+.search-popup input:active {
+  border: solid 2px rgba(46, 136, 228, 0.52);
+}
+
 /* Search button with popup */
 
 /* Enter button with popup */
@@ -484,6 +498,8 @@ main textarea::placeholder {
   right: 0;
   z-index: 10;
   padding: 20px 17px 22px 19px;
+  width: 277px;
+  box-sizing: border-box;
 
   border-radius: 5px;
 
@@ -501,13 +517,30 @@ main textarea::placeholder {
 }
 
 .enter-popup input {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  
   width: 221px;
+  height: 44px;
   display: block;
   padding: 12px 10px;
   margin-bottom: 20px;
+  box-sizing: border-box;
 
   border-radius: 5px;
   border: solid 1px #d3d3d2;
+  outline: none;
+}
+
+.enter-popup input:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.enter-popup input:focus,
+.enter-popup input:active {
+  border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
 .enter-popup a {
@@ -1083,9 +1116,10 @@ main textarea::placeholder {
   margin-bottom: 35px;
 }
 
-.subscribe input {
-  color: #999999;
-  font: inherit;
+.subscribe input[type="email"] {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 24px;
   height: 44px;
   padding-left: 14px;
@@ -1094,6 +1128,16 @@ main textarea::placeholder {
   border-radius: 5px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   margin-right: 6px;
+  outline: none;
+}
+
+.subscribe input[type="email"]:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.subscribe input[type="email"]:focus,
+.subscribe input[type="email"]:active {
+  border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
 .subscribe button {
@@ -1175,7 +1219,7 @@ main textarea::placeholder {
 
 /* Feedback modal */
 .feedback-modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1198,26 +1242,44 @@ main textarea::placeholder {
 
 .feedback input,
 .feedback textarea {
-  color: #999999;
+  color: #323232;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
 
   border-radius: 5px;
   border: solid 1px rgba(178, 178, 178, 0.52);
 
+
   margin-bottom: 20px;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+.feedback input:hover,
+.feedback textarea:hover
+{
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feedback input:focus,
+.feedback textarea:focus,
+.feedback input:active,
+.feedback textarea:active {
+  border: solid 2px rgba(46, 136, 228, 0.52);
 }
 
 .feedback input {
   padding: 10px;
   width: 247px;
+  height: 44px;
 }
 
 .feedback textarea {
   padding: 10px;
   width: 408px;
-  height: 135px;
+  height: 155px;
 }
 
 .feedback p {
