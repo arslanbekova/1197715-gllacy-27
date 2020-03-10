@@ -49,28 +49,28 @@
                     </li>
                     <li>
                       <div class="enter-wrapper">
-                      <a class="enter button" href="#" aria-label="Вход">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
-                          height="19" viewBox="0 0 21 19">
-                          <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
-                          <path
-                            d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
-                        </svg>Вход 
-                      </a>
-                      <div class="enter-popup-wrapper">
-                      <div class="enter-popup">
-                        <form action="#" method="POST">
-                          <label for="login" class="visually-hidden">Ваш логин</label>
-                          <input type="email" name="login" id="login" placeholder="email@example.com">
-                          <label for="password" class="visually-hidden">Ваш пароль</label>
-                          <input type="password" name="password" id="password" placeholder="********">
-                          <button type="submit">Войти</button>
-                        </form>
-                        <a href="#">Забыли пароль?</a>
-                        <a href="#">Новая регистрация</a>
+                        <a class="enter button" href="#" aria-label="Вход">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21"
+                            height="19" viewBox="0 0 21 19">
+                            <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                            <path
+                              d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+                          </svg>Вход
+                        </a>
+                        <div class="enter-popup-wrapper">
+                          <div class="enter-popup">
+                            <form action="#" method="POST">
+                              <label for="login" class="visually-hidden">Ваш логин</label>
+                              <input type="email" name="login" id="login" placeholder="email@example.com">
+                              <label for="password" class="visually-hidden">Ваш пароль</label>
+                              <input type="password" name="password" id="password" placeholder="********">
+                              <button type="submit">Войти</button>
+                            </form>
+                            <a href="#">Забыли пароль?</a>
+                            <a href="#">Новая регистрация</a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    </div>
                     </li>
                     <li>
                       <a class="cart button" href="#" aria-label="Корзина">
@@ -239,16 +239,20 @@
             </div>
             <button type="button">Форма обратной связи</button>
           </div>
-          <!-- <form class="feedback" action="#" method="POST">
+          <div class="feedback-modal">
+            <form class="feedback" action="#" method="POST">
               <p>Мы обязательно вам ответим!</p>
               <label for="name-lastname" class="visually-hidden">Имя и Фамилия</label>
               <input type="text" name="name-lastname" id="name-lastname" placeholder="Имя Фамилия">
               <label for="email" class="visually-hidden">E-mail</label>
               <input type="email" id="email" name="email" placeholder="email@example.com">
               <label for="review" class="visually-hidden">Текст отзыва</label>
-              <textarea id="review" name="review" rows="10" cols="50" placeholder="В свободной форме"></textarea>
+              <textarea id="review" name="review" placeholder="В свободной форме"></textarea>
               <button type="submit">Отправить</button>
-            </form> -->
+            </form>
+            <button class="modal-close" type="button">
+              <span class="visually-hidden">Закрыть</span>
+          </div>
         </section>
       </main>
 
