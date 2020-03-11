@@ -137,7 +137,6 @@ main textarea::placeholder {
 .submenu {
   list-style: none;
 }
-
 /* Header general styles */
 
 /* Header net style */
@@ -188,7 +187,7 @@ main textarea::placeholder {
   position: relative;
 }
 
-.user-nav li:not(:last-child) {
+.user-nav > li:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -600,8 +599,29 @@ main textarea::placeholder {
   padding-left: 16px;
 }
 
+  .cart-popup-wrapper {
+  display: none;
+  padding-top: 5px;
+  width: 120px;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  right: 0;
+  background-color: transparent;
+  }
+
 .cart-popup {
+  display: none;
   background-color: #F8F7F4;
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  width: 540px;
+  box-sizing: border-box;
+  padding: 20px 15px;
+
+  border-radius: 5px;
 }
 
 .cart-popup a {
@@ -626,11 +646,54 @@ main textarea::placeholder {
     linear-gradient(to top, #e74a35, #f26843);
 }
 
-.cart-contents td {
+.cart-popup-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-contents {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cart-contents li {
   color: #323232;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.cart-contents img {
+  margin-right: 14px;
+}
+
+.cart-contents h3 {
+  color: #323232;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 216px;
+  margin-right: 33px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.cart-contents p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.cart-contents p:not(.sum) {
+  margin-right: 29px;
 }
 
 .cart-contents span {
@@ -642,6 +705,13 @@ main textarea::placeholder {
   font-size: 15px;
   font-weight: 700;
   line-height: 18px;
+
+  text-align: right;
+
+  border-top: 1px solid #cacac7;
+
+  padding-top: 17px;
+  margin-top: 0px;
 }
 
 .cart-popup a {
@@ -649,7 +719,41 @@ main textarea::placeholder {
   font-weight: 700;
   line-height: 24px;
   background-image: linear-gradient(0deg, #E74A35, #F26843);
+
+  align-self: flex-end;
 }
+
+.cart-contents .modal-close-item {
+  width: 11px;
+  height: 11px;
+
+  margin-right: 14px;
+
+  border: 0;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11px 11px;
+
+  box-shadow: none;
+  border-radius: 0px;
+  padding: 0px;
+}
+
+.cart-wrapper:hover .cart-popup-wrapper {
+  display: block;
+  z-index: 10;
+}
+
+.cart-wrapper:hover .cart-popup {
+  display: block;
+  z-index: 10;
+}
+
 /* Cart button with popup */
 /* Header */
 

@@ -58,7 +58,7 @@
                           <div class="enter-popup">
                             <form action="#" method="POST">
                               <label for="login" class="visually-hidden">Ваш логин</label>
-                             <div> <input type="email" name="login" id="login" placeholder="email@example.com"></div>
+                              <input type="email" name="login" id="login" placeholder="email@example.com">
                               <label for="password" class="visually-hidden">Ваш пароль</label>
                               <input type="password" name="password" id="password" placeholder="********">
                               <button type="submit">Войти</button>
@@ -70,6 +70,7 @@
                       </div>
                     </li>
                     <li>
+                      <div class="cart-wrapper">
                       <a class="cart-with-item button" href="#" aria-label="Корзина">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
                           <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z" />
@@ -79,26 +80,35 @@
                             d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
                         </svg>2 товара
                       </a>
-                      <!-- <div class="cart-popup">
-                <table class="cart-contents">
-                  <tr>
-                    <td><span></span></td>
-                    <td><img src="/img/1.png" width="33" height="33"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х <span>200 руб.</span></td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td><span></span></td>
-                    <td><img src="/img/3.png" width="33" height="33"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг х <span>300 руб.</span></td>
-                    <td>400 руб.</td>
-                  </tr>
-                </table>
-                <span class="sum-total">Итого: 750 руб.</span> 
-                <a class="button" href="#">Оформить заказ</a>
-              </div> -->
+                      <div class="cart-popup-wrapper">
+                      <div class="cart-popup">
+                        <div class="cart-popup-inner">
+                          <ul class="cart-contents">
+                            <li>
+                              <button class="modal-close-item" type="button">
+                                <span class="visually-hidden">Закрыть</span>
+                              </button>
+                              <img src="/img/1.png" width="33" height="33">
+                              <h3>Пломбир с апельсиновым джемом</h3>
+                              <p>1,5 кг х <span>200 руб.</span></p>
+                              <p class="sum">300 руб.</p>
+                            </li>
+                            <li>
+                              <button class="modal-close-item" type="button">
+                                <span class="visually-hidden">Закрыть</span>
+                              </button>
+                              <img src="/img/3.png" width="33" height="33">
+                              <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
+                              <p>1,5 кг х <span>300 руб.</span></p>
+                              <p class="sum">400 руб.</p>
+                            </li>
+                          </ul>
+                          <p class="sum-total">Итого: 750 руб.</p>
+                          <a class="button" href="#">Оформить заказ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                     </li>
                   </ul>
                 </div>
