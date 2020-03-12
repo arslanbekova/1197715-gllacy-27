@@ -1606,6 +1606,7 @@ svg g:focus {
 /* Product list general style */
 .product-list {
   list-style: none;
+  margin: 0px;
 }
 
 .product-list h3 {
@@ -1631,6 +1632,10 @@ svg g:focus {
 /* Product list general style */
 
 /* Product list net style */
+.catalog {
+  margin-bottom: 40px;
+}
+
 .product-list-container {
   padding-left: 27px;
   padding-right: 27px;
@@ -1659,10 +1664,77 @@ svg g:focus {
 /* Product list */
 
 /* Paggination section */
+.paggination-container {
+padding-left: 27px;
+padding-right: 27px;
+margin-bottom: 20px;
+}
+
 .paggination {
   list-style: none;
   display: flex;
   justify-content: flex-end;
+
+  white-space: nowrap;
+
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.paggination a {
+  display: inline-block;
+  min-width: 27px;
+  line-height: 26px;
+
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+}
+
+.paggination a:hover,
+.paggination a:focus {
+  border: none;
+  border-radius: 50%;
+
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+}
+
+.paggination a:active {
+  border: none;
+  border-radius: 50%;
+
+  color: #000000;
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+.paggination .current {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.paggination .prev {
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+
+  transform: rotate(180deg);
+
+  margin-right: 4px;
+}
+
+.paggination .next {
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin-left: 4px;
+}
 /* Paggination section */
