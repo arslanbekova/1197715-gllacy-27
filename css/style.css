@@ -8,9 +8,14 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
+
+  background-color: #849d8f;
 }
 
 .site-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+
   background-color: #849d8f;
   background-image: url("../img/slider1.png");
   background-repeat: no-repeat;
@@ -21,14 +26,8 @@ body {
 
 .site-wrapper-catalog {
   background-color: #849d8f;
-}
-
-.site-wrapper-container {
   width: 1200px;
   margin: 0 auto;
-
-  /* TODO: FIX */
-  /* padding: 0 20px; */
 }
 
 a:not(.button) {
