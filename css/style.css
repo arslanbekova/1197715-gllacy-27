@@ -8,8 +8,6 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-
-  background-color: #849d8f;
 }
 
 .site-wrapper {
@@ -47,6 +45,8 @@ h1 {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+
+  margin-left: 27px;
 }
 
 button {
@@ -955,14 +955,13 @@ main textarea::placeholder {
   background-image: url("../img/chocolate-bg.png");
   background-repeat: no-repeat;
 }
-
 /* Events general style */
 
 /* Events net style */
 .events-container {
   padding-left: 27px;
   padding-right: 27px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
   width: 1146px;
   display: flex;
   flex-wrap: wrap;
@@ -1005,11 +1004,16 @@ main textarea::placeholder {
 .hits-list {
   list-style: none;
   margin: 0px;
+  margin-bottom: 20px;
 }
 
 .hits-list li::before {
   content: url("../img/hit.svg");
   position: absolute;
+}
+
+.hits-list li:hover .details {
+  display: block;
 }
 
 .hits-list h3 {
@@ -1031,20 +1035,23 @@ main textarea::placeholder {
   font-weight: 700;
   line-height: 13px;
 }
+.hits-list button {
+  align-self: center;
+  position: absolute;
+  z-index: 15;
+  left: 46px;
+  bottom: 22px;
+  cursor: pointer;
+}
 
 /* Hits list general style */
 
 /* Hits list net style */
-.hits-list-container {
-  padding-left: 27px;
-  padding-right: 27px;
-}
-
 .hits-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1146px;
-  justify-content: space-between;
+  width: 1200px;
+  justify-content: center;
   padding: 0px;
 }
 
@@ -1052,7 +1059,13 @@ main textarea::placeholder {
   display: flex;
   flex-direction: column;
   width: 267px;
-  padding-bottom: 40px;
+  
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 6px;
+
+  position: relative;
 }
 
 .hits-list p {
@@ -1609,6 +1622,47 @@ svg g:focus {
   flex-direction: column;
 }
 /* Filter net style */
+
+/* .select-container {
+  position: relative;
+	overflow: hidden;
+	display: inline-block;
+	padding-right: 30px;
+	background: white;
+	border: 1px solid black;
+  border-radius: 10px;
+
+  width: 194px;
+}
+
+.select-container:after {
+  content: "ICON";
+  position: absolute;
+  right: 0;
+  top: 0px;
+   line-height: 30px;
+   width: 30px;
+  height: 100%;
+   text-align: center;
+  background: grey;
+   color: white;
+   font-size: 10px;
+  z-index: 0;
+}
+
+select {
+  padding: 6px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  border: none;
+  width: 165%;
+  background: transparent;
+  display: block;
+  color: black;
+  outline: none;
+} */
+
 /* Filter */
 
 /* Product list */
@@ -1637,23 +1691,52 @@ svg g:focus {
   font-weight: 700;
   line-height: 13px;
 }
+
+.product-list button {
+  align-self: center;
+  position: absolute;
+  left: 46px;
+  bottom: 22px;
+  cursor: pointer;
+
+  z-index: 2
+  ;
+}
+
+.details {
+  /* display: none; */
+
+  opacity: 0;
+
+  height: 405px;
+  width: 293px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  background-color: rgba(225,225,225,0.2);
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.product-list li:hover .details {
+  /* display: block; */
+  opacity: 1;
+}
 /* Product list general style */
 
 /* Product list net style */
 .catalog {
-  margin-bottom: 40px;
-}
-
-.product-list-container {
-  padding-left: 27px;
-  padding-right: 27px;
+  margin-bottom: 50px;
 }
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1146px;
-  justify-content: space-between;
+  width: 1200px;
+  justify-content: center;
   padding: 0px;
 }
 
@@ -1661,7 +1744,12 @@ svg g:focus {
   display: flex;
   flex-direction: column;
   width: 267px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 6px;
+  position: relative;
+  
 }
 
 .product-list p {
