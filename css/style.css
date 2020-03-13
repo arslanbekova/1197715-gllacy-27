@@ -1482,21 +1482,39 @@ svg g:focus {
 /* Socials list */
 
 /* Footer navigation */
+.footer-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 290px;
+  margin-left: -15px;
+}
+
 .footer-nav {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.first-column {
+  margin-right: 32px;
+}
+
+.first-column li {
+  padding-left: 21px;
+}
+
+.footer-nav li {
+  margin-bottom: 5px;
 }
 
 .footer-nav .favourite {
   font-weight: 700;
-}
-
-.favourite {
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
 }
-
 /* Footer navigation */
 
 /* Footer copyright */
@@ -1504,7 +1522,6 @@ svg g:focus {
   font-size: 12px;
   line-height: 16px;
 }
-
 /* Footer copyright */
 
 /* Footer net style */
@@ -1515,27 +1532,7 @@ svg g:focus {
   padding-left: 27px;
   align-items: flex-end;
   padding-top: 8px;
-  padding-bottom: 20px;
-}
-
-.footer-nav {
-  column-count: 2;
-  padding-left: 0px;
-  margin: 0px;
-  margin-right: 5px;
-}
-
-.second-column-container {
-  margin-left: -5px;
-}
-
-.footer-nav .first-column {
-  padding-left: 22px;
-}
-
-.first-column-container li:not(:last-child),
-.second-column-container li:not(:last-child) {
-  margin-bottom: 5px;
+  padding-bottom: 25px;
 }
 
 .socials {
