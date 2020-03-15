@@ -1865,10 +1865,7 @@ select {
   padding-left: 25px;
   box-sizing: border-box;
 
-}
-
-::-ms-.fillings-checkbox {
-  padding-top: 8px;
+  -ms-padding-top: 8px;
 }
 
 
