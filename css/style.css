@@ -113,7 +113,9 @@ main textarea::placeholder {
   font-weight: 400;
 }
 
-input:-ms-input-placeholder {
+header input:-ms-input-placeholder,
+main input:-ms-input-placeholder,
+main textarea:-ms-input-placeholder {
   color: #999999;
 }
 /* General styles */
