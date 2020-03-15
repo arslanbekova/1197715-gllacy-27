@@ -1864,8 +1864,11 @@ select {
 
   padding-left: 25px;
   box-sizing: border-box;
+}
 
-  -ms-padding-top: 8px;
+_:-ms-fullscreen,
+:root .fillings-checkbox {
+  padding-top: 8px;
 }
 
 
