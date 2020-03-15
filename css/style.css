@@ -630,6 +630,8 @@ main textarea:-ms-input-placeholder {
   padding: 20px 15px;
 
   border-radius: 5px;
+
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .cart-popup a {
