@@ -1864,13 +1864,9 @@ select {
 
   padding-left: 25px;
   box-sizing: border-box;
-}
 
-_:-ms-fullscreen,
-:root .fillings-checkbox {
-  padding-top: 8px;
+  padding-top= 8px;
 }
-
 
 .fillings-checkbox li {
   margin-right: 30px;
