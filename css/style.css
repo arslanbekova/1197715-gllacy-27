@@ -112,6 +112,10 @@ main textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
 }
+
+:-ms-input-placeholder {
+  color: #999999; /* IE 10+ */
+}
 /* General styles */
 
 /* Header */
@@ -1865,7 +1869,7 @@ select {
   padding-left: 25px;
   box-sizing: border-box;
 
-  padding-top= 8px;
+  padding-top=8px; /* for IE */
 }
 
 .fillings-checkbox li {
