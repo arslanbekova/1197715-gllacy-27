@@ -104,7 +104,6 @@ button:active {
   color: #999999;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
 }
 
 main input::placeholder,
@@ -112,9 +111,7 @@ main textarea::placeholder {
   color: #999999;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
 }
-
 /* General styles */
 
 /* Header */
@@ -1370,7 +1367,7 @@ main textarea::placeholder {
 
 /* Feedback modal */
 .feedback-modal {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 50%;
   left: 50%;
