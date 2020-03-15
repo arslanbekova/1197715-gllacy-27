@@ -114,7 +114,7 @@ main textarea::placeholder {
 }
 
 input:-ms-input-placeholder {
-  color: #999999; /* IE 10+ */
+  color: #999999;
 }
 /* General styles */
 
