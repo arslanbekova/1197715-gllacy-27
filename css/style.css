@@ -1867,6 +1867,11 @@ select {
 
 }
 
+::-ms-.fillings-checkbox {
+  padding-top: 8px;
+}
+
+
 .fillings-checkbox li {
   margin-right: 30px;
   margin-left: 20px;
