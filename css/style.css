@@ -117,7 +117,6 @@ main textarea::placeholder {
 
 header input:-ms-input-placeholder,
 main input:-ms-input-placeholder,
-.subscribe input:-ms-input-placeholder,
 main textarea:-ms-input-placeholder {
   color: #999999;
 }
@@ -1327,6 +1326,10 @@ main textarea:-ms-input-placeholder {
   border: 1px solid rgba(178, 178, 178, 0.52);
   margin-right: 6px;
   outline: none;
+}
+
+.subscribe input:-ms-input-placeholder {
+  color: #999999;
 }
 
 .subscribe input[type="email"]:hover {
