@@ -1328,7 +1328,7 @@ main textarea:-ms-input-placeholder {
   outline: none;
 }
 
-.subscribe input:-ms-input-placeholder {
+.subscribe input[type="email"]:-ms-input-placeholder {
   color: #999999;
 }
 
