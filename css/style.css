@@ -1878,10 +1878,13 @@ select {
   border-radius: 20px;
   background-color: rgba(248, 247, 244, 0.2);
   width: 100%;
+  display: flex;
 }
 
 .radio-filter-fat ul {
   display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
