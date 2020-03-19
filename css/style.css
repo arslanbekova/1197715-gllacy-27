@@ -1456,7 +1456,7 @@ main textarea:-ms-input-placeholder {
 
 /* Feedback modal */
 .feedback-modal {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 50%;
   left: 50%;

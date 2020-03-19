@@ -43,7 +43,7 @@
                       <div class="search-wrapper">
                         <form class="search-popup" action="https://echo.htmlacademy.ru/" method="POST">
                           <label for="search" class="visually-hidden">Поле поиска</label>
-                          <input type="search" name="search" id="search" placeholder="Крем-брюле">
+                          <input type="search" name="search" id="search" placeholder="Крем-брюле" required>
                         </form>
                       </div>
                     </li>
@@ -61,9 +61,9 @@
                           <div class="enter-popup">
                             <form action="https://echo.htmlacademy.ru/" method="POST">
                               <label for="login" class="visually-hidden">Ваш логин</label>
-                              <input type="email" name="login" id="login" placeholder="email@example.com">
+                              <input type="email" name="login" id="login" placeholder="email@example.com" required>
                               <label for="password" class="visually-hidden">Ваш пароль</label>
-                              <input type="password" name="password" id="password" placeholder="********">
+                              <input type="password" name="password" id="password" placeholder="********" required>
                               <button type="submit">Войти</button>
                             </form>
                             <a href="#">Забыли пароль?</a>
@@ -221,7 +221,7 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас
                 происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <label for="subscribe" class="visually-hidden">E-mail</label>
-              <input type="email" id="subscribe" name="subscribe" placeholder="email@example.com">
+              <input type="email" id="subscribe" name="subscribe" placeholder="email@example.com" required>
               <button type="submit">Отправить</button>
             </form>
           </section>
@@ -246,11 +246,11 @@
             <form class="feedback" action="https://echo.htmlacademy.ru/" method="POST">
               <p>Мы обязательно вам ответим!</p>
               <label for="name-lastname" class="visually-hidden">Имя и Фамилия</label>
-              <input type="text" name="name-lastname" id="name-lastname" placeholder="Имя Фамилия">
+              <input type="text" name="name-lastname" id="name-lastname" placeholder="Имя Фамилия" required>
               <label for="email" class="visually-hidden">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="email@example.com">
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
               <label for="review" class="visually-hidden">Текст отзыва</label>
-              <textarea id="review" name="review" placeholder="В свободной форме"></textarea>
+              <textarea id="review" name="review" placeholder="В свободной форме" required></textarea>
               <button type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button">
