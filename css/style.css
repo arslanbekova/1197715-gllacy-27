@@ -1391,6 +1391,24 @@ main textarea:-ms-input-placeholder {
 
   width: 80px;
   height: 140px;
+
+  z-index: 2;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
 }
 
 .contacts-map {
@@ -1405,6 +1423,8 @@ main textarea:-ms-input-placeholder {
   position: absolute;
   right: 27px;
   top: 63px;
+
+  z-index: 3;
 }
 
 .contacts-map-inner {
