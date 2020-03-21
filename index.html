@@ -229,8 +229,10 @@
 
         <section class="map">
           <h2 class="visually-hidden h2">Контакты</h2>
-
-          <img src="img/map.png" width="1200" height="430" alt="Карта с указанием местоположения офиса">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CKqsiR5x" width="100%" height="430" frameborder="1"
+              allowfullscreen="true" style="position:relative;">
+          </iframe>
+          <!-- <img src="img/map.png" width="1200" height="430" alt="Карта с указанием местоположения офиса"> -->
           <div class="contacts-map">
             <div class="contacts-map-inner">
               <p>Адрес главного офиса</p>
@@ -240,17 +242,17 @@
               <a href="tel:88124502525" class="phone">8 812 450-25-25</a>
               <p>(с 10 до 20 ежедневно)</p>
             </div>
-            <button type="button">Форма обратной связи</button>
+            <a href="#" onclick="" class="feedback-link">Форма обратной связи</a>
           </div>
           <div class="feedback-modal">
             <form class="feedback" action="https://echo.htmlacademy.ru/" method="POST">
               <p>Мы обязательно вам ответим!</p>
-              <label for="name-lastname" class="visually-hidden">Имя и Фамилия</label>
-              <input type="text" name="name-lastname" id="name-lastname" placeholder="Имя Фамилия" required>
+              <label for="lastName" class="visually-hidden">Имя и Фамилия</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Имя Фамилия">
               <label for="email" class="visually-hidden">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+              <input type="email" id="email" name="email" placeholder="email@example.com">
               <label for="review" class="visually-hidden">Текст отзыва</label>
-              <textarea id="review" name="review" placeholder="В свободной форме" required></textarea>
+              <textarea id="review" name="review" placeholder="В свободной форме"></textarea>
               <button type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button">
@@ -326,5 +328,5 @@
     </div>
   </div>
 </body>
-
+<script src="/js/feedback-modal.js"></script>
 </html>
